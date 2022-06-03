@@ -9,7 +9,7 @@ import { Listing } from '../types';
   styleUrls: ['./listing-detail-page.component.css']
 })
 export class ListingDetailPageComponent implements OnInit {
-  listing!: Listing;
+  listing: Listing ;
 
   constructor(
     private route: ActivatedRoute,
