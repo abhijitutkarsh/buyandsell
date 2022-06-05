@@ -12,6 +12,7 @@ export class ListingDataFormComponent implements OnInit {
   @Input() currentName = '';
   @Input() currentDescription = '';
   @Input() currentPrice!: number;
+  @Input() currentViews : number;
 
   name: string = '';
   description: string = '';
@@ -34,7 +35,7 @@ export class ListingDataFormComponent implements OnInit {
       name: this.name,
       description: this.description,
       price: Number(this.price),
-      // views: Number(this.views),
+      views: 0,
     });
   }
 }
